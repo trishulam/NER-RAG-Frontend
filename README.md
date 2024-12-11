@@ -1,37 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# S2T Frontend
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is the frontend application for the S2T system, built using **Next.js**. It is designed to provide an interactive visualization of entities and relationships extracted by the backend. The application features an NER (Named Entity Recognition) graph and a RAG (Retrieval-Augmented Generation) question-and-answer interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Key features include:
+
+- **NER Graph**: Visual representation of entities and relationships using the React Force Graph library.
+- **RAG Q&A Interface**: Query interface for the RAG system to retrieve context-enriched answers.
+- **Modern UI Design**: Built with ShadCN components and styled using Tailwind CSS.
+
+---
+
+## Features
+
+- **Interactive Graphs**:
+
+  - Visualize entities (e.g., Persons, Events, Locations, Vehicles) and their relationships.
+  - Use the React Force Graph library for dynamic graph rendering.
+
+- **RAG Q&A Interface**:
+
+  - Query and display results from the backend RAG system.
+  - Contextual reasoning steps and source documents are included.
+
+- **Styling and Components**:
+
+  - UI components designed with ShadCN for a cohesive look.
+  - Styled using Tailwind CSS for responsive and modern design.
+
+---
+
+## Directory Structure
+
+```
+.
+├── README.md
+├── app
+│   ├── favicon.ico
+│   ├── fonts
+│   │   ├── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── rag-qa
+│   │   └── page.tsx
+│   └── styles
+│       └── colors.ts
+├── components
+│   ├── GraphList.tsx
+│   ├── InfoPanel.tsx
+│   ├── Legend.tsx
+│   ├── LinkInfoPanel.tsx
+│   ├── Loader.tsx
+│   ├── RelationshipTypeSelector.tsx
+│   ├── TextInputModal.tsx
+│   └── ui
+│       ├── badge.tsx
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── checkbox.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── scroll-area.tsx
+│       ├── select.tsx
+│       └── textarea.tsx
+├── components.json
+├── lib
+│   └── utils.ts
+├── loading-icon.json
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation and Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the Repository**:
 
-## Learn More
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the Development Server**:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# S2T-Frontend
+4. **Build the Application** (for production):
+
+   ```bash
+   npm run build
+   ```
+
+5. **Start the Production Server**:
+
+   ```bash
+   npm run start
+   ```
+
+---
+
+## Features in Detail
+
+### NER Graph
+
+- **Nodes and Relationships**:
+
+  - Nodes represent entities such as Persons, Locations, Events, Emails, and Phones.
+  - Relationships include Person-to-Person, Person-to-Vehicle, Location-to-Event, etc.
+
+- **Legend**:
+
+  - A legend is provided to distinguish between different types of nodes and relationships.
+
+- **Interactions**:
+
+  - Zoom, pan, and select nodes/edges for detailed information.
+
+![NER Graph](https://ibb.co/4gcjdF7)
+
+### RAG Q&A Interface
+
+- Allows users to ask questions about extracted entities and relationships.
+- Provides answers enriched with contextual reasoning steps and source documents.
+- Dropdown to select the model provider (e.g., OpenAI).
+
+![RAG Q&A Interface](https://ibb.co/jhdHHB0)
+
+---
+
+## Technologies Used
+
+- **Framework**: Next.js
+- **Visualization**: React Force Graph
+- **Styling**: ShadCN components and Tailwind CSS
+- **Font**: Geist by Vercel
+
+---
+
+## License
+
+This project is for interview demonstration purposes and is not licensed for public or commercial use.
+
