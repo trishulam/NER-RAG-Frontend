@@ -87,7 +87,7 @@ Key features include:
 1. **Clone the Repository**:
 
    ```bash
-   git clone [<repository-url>](https://github.com/trishulam/S2T-Frontend.git)
+   git clone https://github.com/trishulam/S2T-Frontend.git
    cd S2T-Frontend
    ```
 
