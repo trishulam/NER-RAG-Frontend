@@ -135,8 +135,8 @@ Key features include:
 - **Interactions**:
 
   - Zoom, pan, and select nodes/edges for detailed information.
-
-![NER Graph](https://ibb.co/4gcjdF7)
+ 
+![Screenshot 2024-12-12 at 12 29 27 AM](https://github.com/user-attachments/assets/d06095ea-b4b7-4c6b-86a1-437806254d27)
 
 ### RAG Q&A Interface
 
@@ -144,7 +144,7 @@ Key features include:
 - Provides answers enriched with contextual reasoning steps and source documents.
 - Dropdown to select the model provider (e.g., OpenAI).
 
-![RAG Q&A Interface](https://ibb.co/jhdHHB0)
+![Screenshot 2024-12-12 at 12 36 14 AM](https://github.com/user-attachments/assets/eeb3caa3-076c-4fd5-a005-0ce636b1d144)
 
 ---
 
