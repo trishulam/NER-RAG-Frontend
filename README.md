@@ -87,8 +87,8 @@ Key features include:
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone [<repository-url>](https://github.com/trishulam/S2T-Frontend.git)
+   cd S2T-Frontend
    ```
 
 2. **Install Dependencies**:
