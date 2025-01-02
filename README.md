@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the frontend application for the S2T system, built using **Next.js**. It is designed to provide an interactive visualization of entities and relationships extracted by the backend. The application features an NER (Named Entity Recognition) graph and a RAG (Retrieval-Augmented Generation) question-and-answer interface.
+This is the frontend application for the NER-RAG system, built using **Next.js**. It is designed to provide an interactive visualization of entities and relationships extracted by the backend. The application features an NER (Named Entity Recognition) graph and a RAG (Retrieval-Augmented Generation) question-and-answer interface.
 
 Key features include:
 
@@ -88,7 +88,7 @@ Key features include:
 
    ```bash
    git clone https://github.com/trishulam/S2T-Frontend.git
-   cd S2T-Frontend
+   cd NER-RAG-Frontend
    ```
 
 2. **Install Dependencies**:
