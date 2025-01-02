@@ -1,4 +1,4 @@
-# S2T Frontend
+# NER-RAG Frontend
 
 ## Overview
 
